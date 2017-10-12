@@ -91,9 +91,9 @@ Fin Funcion
 
 
 
-Segun menu
-var menu = "Mostramos al usuario un meno con opciones a elegir (1(cifrar), 2(decifrar), 3(salir );
-definir phrase como caracter;
+  Segun menu
+  var menu = "Mostramos al usuario un meno con opciones a elegir (1(cifrar), 2(decifrar), 3(salir );
+  definir phrase como caracter;
 	
 	opcion_1:
 		phrase = 'Ingrese un texto a cifrar'
