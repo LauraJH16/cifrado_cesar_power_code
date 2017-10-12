@@ -90,7 +90,7 @@ Funcion  validate( date)
 Fin Funcion
 
 
-
+~~~
   Segun menu
   var menu = "Mostramos al usuario un meno con opciones a elegir (1(cifrar), 2(decifrar), 3(salir );
   definir phrase como caracter;
@@ -111,6 +111,7 @@ Fin Funcion
       break;
     por defecto:
       mostrar una mensaje('Vuelva a realizar el proceso, recuerde ingresar un numero valido de la lista');
+~~~      
 Fin Segun
 
 
