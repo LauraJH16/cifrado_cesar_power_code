@@ -20,6 +20,96 @@ En este proyecto final, titulado “Cifrado César”, se encuentra una carpeta 
 
 Pseudocódigo
 ------------  
+Funcion  cipher ( secret)
+	
+	definir newPhrase como caracter
+	newPhrase = ''
+
+	definir toAscci como entero
+	toAscci =caracter convertido a Ascii
+
+	Para j=0 Hasta tamaño de secret Con Paso 1 Hacer
+				
+		Si (toAscci > 64 y toAscci < 91) Entonces
+			escribir newPhrase = newPhrase +  Ascci convertido a caracter mayusculas ((toAscci - 65 + 33) % 26 + 65));
+	
+		Si no si 
+			(toAscci > 96 && toAscci < 123) Entonces 
+			escribir newPhrase = newPhrase  + Ascci convertido a caracter minusculas((toAscci - 97 + 33) % 26 + 97));
+		sino   
+			escribir newPhrase =  AsAscci convertido a caracter mayusculas toAscci;
+		Fin Si
+	Fin Para
+	
+Fin Funcion
+
+
+
+
+Funcion  decipher( secret)
+	
+	definir newPhrase como caracter
+	newPhrase = ''
+
+	definir toAscci como entero
+	toAscci =caracter convertido a Ascii
+
+	Para i=0 Hasta tamaño de secret Con Paso 1 Hacer
+				
+		Si (toAscci > 64 y toAscci < 91) Entonces
+			escribir newPhrase = newPhrase +  Ascci convertido a caracter mayusculas ((toAscci - 65 - 33 + 26*2) % 26 + 65));
+	
+		Si no si 
+			(toAscci > 96 && toAscci < 123) Entonces 
+			escribir newPhrase = newPhrase  + Ascci convertido a caracter minusculas((toAscci - 97 - 33 + 26*2) % 26 + 97));
+		sino   
+			escribir newPhrase =  AsAscci convertido a caracter mayusculas toAscci;
+		Fin Si
+	Fin Para
+	
+Fin Funcion
+
+
+
+
+
+Funcion  validate( date)
+	
+	
+	Para i=0 Hasta tamaño "date" Con Paso  1 Hacer
+				
+		Si (el Ascii de date > 64 y el Ascii de date< 91) o (el Ascii de date > 96 y el Ascii de date < 123))
+			escribir date;  //condicionamos a que solo se ingrese letras o mayusculas o minusculas pasando a ascii, una vez convertido condicionamosa que este entre el rango
+		Si no si ((date igual valor nulo))
+			escribir "Error";
+		sino 
+			escribir "Error";
+		Fin Si
+	Fin Para
+	
+Fin Funcion
+
+
+
+Segun variable_numerica Hacer
+
+var menu = prompt ('MENU PRINCIPAL CIFRADO CESAR \n\n' + '1- Para cifrar frases  \n\n ' + '2.- Para decifrar frases  \n\n' + '3.- Salir');
+var phrase;
+	opcion_1:
+		phrase = prompt ('Ingrese un texto a cifrar');
+      document.write('<p>El texto cifrado es: \n\n </p> ' + cipher(validate(phrase))); // la frase ingresada primero es validada y luego pasa a la funcion cipher
+      break;
+	opcion_2:
+		phrase = prompt ('Ingrese un texto a descifrar');
+      document.write('<p>El texto descifrado es: \n\n </p> ' + decipher(validate(phrase))); // la frase ingresada primero es validada y luego pasa a la funcion decipher
+      break;
+	
+	De Otro Modo:
+		document.write('Gracias');
+      break;
+    default:
+      alert('Vuelva a realizar el proceso, recuerde ingresar un numero valido de la lista');
+Fin Segun
 
 
 Diagrama de flujo
