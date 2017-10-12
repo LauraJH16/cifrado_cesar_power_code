@@ -34,7 +34,7 @@ Autoras
 * Laura Jimenez Hidalgo
 * Kattia Rojas
 * Kamaly Zapana Lorenzo
-* Shanon Rivera Aranibal
+* Shannon Rivera Aranibal
 * Mily Quispe Yura
 
 Fecha
