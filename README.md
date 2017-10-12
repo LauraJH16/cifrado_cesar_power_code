@@ -24,7 +24,7 @@ Pseudocódigo
 
 Diagrama de flujo
 -----------------
-
+![Ingreso de datos](assets/docs/img1.jpg "Ingreso de datos")
 
 Autoras
 ------
@@ -32,7 +32,7 @@ Autoras
 * Lizbeth Félix Peña
 * Gaby Mamani Flores
 * Laura Jimenez Hidalgo
-* Kattia Rojas 
+* Kattia Rojas
 * Kamaly Zapana Lorenzo
 * Shanon Rivera Aranibal
 * Mily Quispe Yura
