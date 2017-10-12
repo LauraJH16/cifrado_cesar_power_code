@@ -37,7 +37,7 @@ Funcion  cipher ( secret)
 			(toAscci > 96 && toAscci < 123) Entonces 
 			escribir newPhrase = newPhrase  + Ascci convertido a caracter minusculas((toAscci - 97 + 33) % 26 + 97));
 		sino   
-			escribir newPhrase =  AsAscci convertido a caracter mayusculas toAscci;
+			escribir newPhrase;
 		Fin Si
 	Fin Para
 	
@@ -63,7 +63,7 @@ Funcion  decipher( secret)
 			(toAscci > 96 && toAscci < 123) Entonces 
 			escribir newPhrase = newPhrase  + Ascci convertido a caracter minusculas((toAscci - 97 - 33 + 26*2) % 26 + 97));
 		sino   
-			escribir newPhrase =  AsAscci convertido a caracter mayusculas toAscci;
+			escribir newPhrase;
 		Fin Si
 	Fin Para
 	
@@ -79,7 +79,7 @@ Funcion  validate( date)
 	Para i=0 Hasta tamaño "date" Con Paso  1 Hacer
 				
 		Si (el Ascii de date > 64 y el Ascii de date< 91) o (el Ascii de date > 96 y el Ascii de date < 123))
-			escribir date;  //condicionamos a que solo se ingrese letras o mayusculas o minusculas pasando a ascii, una vez convertido condicionamosa que este entre el rango
+			escribir date;  //condicionamos a que solo se ingrese letras o mayusculas o minusculas pasando a ascii, una vez 					convertido condicionamosa que este entre el rango
 		Si no si ((date igual valor nulo))
 			escribir "Error";
 		sino 
