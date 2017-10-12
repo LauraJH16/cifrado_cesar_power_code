@@ -5,14 +5,14 @@ function cipher(secret){
 
     for(var j = 0; j < secret.length; j++){
 
-        var toAscci = secret.charCodeAt(j); //convierte el string ingresado a su equivalente en Ascii en la posicion i
+        var toAscii = secret.charCodeAt(j); //convierte el string ingresado a su equivalente en Ascii en la posicion i
 
-        if( toAscci > 64 && toAscci < 91) // formula para mayusculas
-            newPhrase += String.fromCharCode((toAscci - 65 + 33) % 26 + 65);
-        else if(toAscci > 96 && toAscci < 123)  // para minusculas
-            newPhrase += String.fromCharCode((toAscci - 97 + 33) % 26 + 97);
+        if( toAscii > 64 && toAscii < 91) // formula para mayusculas
+            newPhrase += String.fromCharCode((toAscii - 65 + 33) % 26 + 65);
+        else if(toAscii > 96 && toAscii < 123)  // para minusculas
+            newPhrase += String.fromCharCode((toAscii - 97 + 33) % 26 + 97);
         else
-            newPhrase += String.fromCharCode(toAscci);
+            newPhrase += String.fromCharCode(toAscii);
 
     }
 
@@ -25,14 +25,14 @@ function decipher(secret){
 
     for(var i = 0; i < secret.length; i++){
 
-        var toAscci = secret.charCodeAt(i); //convierte el string ingresado a su equivalente en Ascii en la posicion i
+        var toAscii = secret.charCodeAt(i); //convierte el string ingresado a su equivalente en Ascii en la posicion i
 
-        if( toAscci > 64 && toAscci < 91) //para mayusculas
-            newPhrase += String.fromCharCode((toAscci - 65 - 33 + 26*2) % 26 + 65);//26*2 porque recorre el abecedario dos veces para decifrar
-        else if(toAscci > 96 && toAscci < 123)  //paraminusculas
-            newPhrase += String.fromCharCode((toAscci - 97 - 33 + 26*2) % 26 + 97);
+        if( toAscii > 64 && toAscii < 91) //para mayusculas
+            newPhrase += String.fromCharCode((toAscii - 65 - 33 + 26*2) % 26 + 65);//26*2 porque recorre el abecedario dos veces para decifrar
+        else if(toAscii > 96 && toAscii < 123)  //paraminusculas
+            newPhrase += String.fromCharCode((toAscii - 97 - 33 + 26*2) % 26 + 97);
         else
-            newPhrase += String.fromCharCode(toAscci);
+            newPhrase += String.fromCharCode(toAscii);
     }
 
     return newPhrase;
@@ -48,9 +48,9 @@ function validate(date) {
         if ((date.charCodeAt(i) > 64 && date.charCodeAt(i) < 91) || (date.charCodeAt(i) > 96 && date.charCodeAt(i) < 123)) //condicionamos a que solo se ingrese letras o mayusculas o minusculas pasando a ascii, una vez convertido condicionamosa que este entre el rango
             return date;
         else if(date === null)
-            return document.write("[ERROR]"); // no ingrese nada
+            return document.write("<p> [ERROR]"); // no ingrese nada
         else
-            return document.write("[ERROR]"); // ingrese numeros o simbolos en el primer valor
+            return document.write("<p> [ERROR]"); // ingrese numeros o simbolos en el primer valor
 
     }
 
