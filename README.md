@@ -111,9 +111,9 @@ Fin Funcion
       break;
     por defecto:
       mostrar una mensaje('Vuelva a realizar el proceso, recuerde ingresar un numero valido de la lista');
-~~~      
+      
 Fin Segun
-
+~~~
 
 Diagrama de flujo
 -----------------
