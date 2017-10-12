@@ -91,24 +91,26 @@ Fin Funcion
 
 
 
-Segun variable_numerica Hacer
-
-var menu = prompt ('MENU PRINCIPAL CIFRADO CESAR \n\n' + '1- Para cifrar frases  \n\n ' + '2.- Para decifrar frases  \n\n' + '3.- Salir');
-var phrase;
+Segun menu
+var menu = "Mostramos al usuario un meno con opciones a elegir (1(cifrar), 2(decifrar), 3(salir );
+definir phrase como caracter;
+	
 	opcion_1:
-		phrase = prompt ('Ingrese un texto a cifrar');
-      document.write('<p>El texto cifrado es: \n\n </p> ' + cipher(validate(phrase))); // la frase ingresada primero es validada y luego pasa a la funcion cipher
+		phrase = 'Ingrese un texto a cifrar'
+      		ejecutar (pharse es evaluada en funcion cipher)
+		escribir texto cifrado;
       break;
 	opcion_2:
-		phrase = prompt ('Ingrese un texto a descifrar');
-      document.write('<p>El texto descifrado es: \n\n </p> ' + decipher(validate(phrase))); // la frase ingresada primero es validada y luego pasa a la funcion decipher
+		phrase = 'Ingrese un texto a descifrar'
+		ejecutar (pharse es evaluada en funcion decipher)
+		escribir texto descifrado;
       break;
 	
 	De Otro Modo:
-		document.write('Gracias');
+		escribir ('Gracias');
       break;
-    default:
-      alert('Vuelva a realizar el proceso, recuerde ingresar un numero valido de la lista');
+    por defecto:
+      mostrar una mensaje('Vuelva a realizar el proceso, recuerde ingresar un numero valido de la lista');
 Fin Segun
 
 
