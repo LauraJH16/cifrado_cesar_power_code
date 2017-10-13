@@ -1,5 +1,5 @@
 function cipher(secret){
-
+    var secret = document.getElementById("palabra").value;
     var newPhrase = "";
     //recorremos todo  el string
 
@@ -21,6 +21,7 @@ function cipher(secret){
 
 
 function decipher(secret){
+    var secret= document.getElementById("palabra").value;
     var newPhrase = "";
 
     for(var i = 0; i < secret.length; i++){
